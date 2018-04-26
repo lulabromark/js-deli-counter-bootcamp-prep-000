@@ -14,7 +14,8 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
+  var line = [];
   for (var i = 1; i < katzDeliLine.length; i++) {
-    return(`The line is currently: ${i}. ${katzDeliLine[i - 1]}`)
+     return(line.push(`${i}. ${katzDeliLine[i - 1]},`))
   }
 }
